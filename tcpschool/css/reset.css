@@ -1,0 +1,17 @@
+ * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        width: 1920px;
+        height: 100%;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }

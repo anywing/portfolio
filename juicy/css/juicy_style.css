@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* 전체 css */
+*{text-align:center; }
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nova Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/novaround/v21/flU9Rqquw5UhEnlwTJYTUYDUeA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+#wrap{width:100%; font-family:'NanumSquareNeo-Variable';}
+@media screen and (max-width : 1320px){#wrap{width:1320px;}}
+section, footer .footer_wrap{width:80%; margin:0 auto; }
+
+/* 헤더 css */
+
+/* 헤더의 탑메뉴 */
+header{position:sticky; top:0; z-index:100;}
+header .top_menu{background-color:#ff001e;}
+header .top_menu .top_menu_wrap{width:80%; margin:0 auto; padding:10px 0; display: flex; justify-content:space-between; align-items: center;}
+header .top_menu .top_menu_wrap .right_gnb ul{display: flex;}
+header .top_menu .top_menu_wrap .right_gnb ul li{margin-left:30px;}
+header .top_menu .top_menu_wrap .right_gnb ul li a{color:white; font-size:18px; font-weight:bold;}
+header .top_menu .top_menu_wrap .right_gnb ul li a:hover{text-decoration:underline;}
+/* 헤더의 아래쪽 네비게이션메뉴 */
+header nav{background-color:white;}
+header nav .gnb_wrap{position:relative; width:100%; margin:0 auto; padding:25px 10%;display: flex; justify-content:space-between; box-sizing: border-box;}
+header nav .gnb_wrap .gnb > ul{display:flex; align-items: center;}
+header nav .gnb_wrap .gnb ul li{margin-left:60px; line-height:71px;}
+header nav .gnb_wrap .gnb ul li > a{box-sizing:border-box; color: #ff001e; font-size:23px; font-weight:600; letter-spacing:-1px;}
+header nav .gnb_wrap .gnb ul li > a:hover{border-bottom:7px solid #ff001e;}
+header nav .gnb_wrap .gnb ul li.fran > a{padding:10px 15px; background-color: #ff001e; color:white;}
+header nav .gnb_wrap .gnb ul li.fran > a:hover{border:none;}
+header nav .gnb_wrap .gnb ul li .snb{display:none; width:100%; height:40px; background-color:white; position:absolute; padding:15px 0;top:96px; left:0; z-index:300;}
+header nav .gnb_wrap .gnb ul li .snb li{line-height : 30px;}
+header nav .gnb_wrap .gnb ul li .snb1 li:last-child{margin-right:calc(10% + 522px);}
+header nav .gnb_wrap .gnb ul li .snb2 li:last-child{margin-right:calc(10% + 296px);}
+header nav .gnb_wrap .gnb ul li .snb3 li:last-child{margin-right:calc(10% + 432px);}
+header nav .gnb_wrap .gnb ul li .snb4 li:last-child{margin-right:calc(10% + 165px);}
+header nav .gnb_wrap .gnb ul li .snb5 li:last-child{margin-right:10%;}
+header nav .gnb_wrap .gnb ul li .snb6 li:last-child{margin-right:10%;}
+header nav .gnb_wrap .gnb ul li .snb li a{border:none; font-weight:400;}
+header nav .gnb_wrap .gnb ul li:hover .snb{display:flex; justify-content: flex-end;}
+header nav .gnb_wrap .gnb ul li .snb li a:hover{font-weight:600;}
+/* 메인 css */
+main{width:100%; height:1034px; background: url(../img/main_bg_01.png) no-repeat center;}
+main .main_text{padding-top:60px; color:#ff001e;}
+main .main_text p{line-height:47px;font-size:30px; font-weight:400;}
+main .main_text p:first-child{margin-bottom:7px;}
+main .main_text p span{background-color:white;}
+main .main_text h2{font-family: 'Nova Round'; font-size:90px; font-weight:bold; animation: h_ani .5s infinite;}
+@keyframes h_ani {0%{opacity:0;} 49%{opacity:0;} 50%{opacity:1;} 100%{opacity:1;}}
+
+/* 섹션1 css */
+.section1 .menu{display:flex; justify-content:space-between; padding:60px 0;}
+.section1 .menu li a p{margin-top:20px; color:#ff001e; font-size:17px; font-weight:600;}
+.section1 .menu li a{transform-style:preserve-3d; perspective:200;}
+.section1 .menu li a:hover img{animation:img_ani .6s infinite;}
+@keyframes img_ani{0%{transform:translateY(0px);} 50%{transform:translateY(-25px);}100%{transform:translateY(0px);}}
+
+/* 섹션2 CSS */
+.section2{padding: 80px 0;}
+.section2 .tab_content{padding:10px 0;}
+.section2 .tabs ul{display:flex;}
+.section2 .tabs ul li{width:calc(100% / 3); height: 80px; line-height:70px; border-bottom:5px solid #ff001e;box-sizing: border-box;}
+.section2 .tabs ul li.now_tab{ border:5px solid #ff001e; border-bottom: none;}
+.section2 .tabs ul li a{color:#ff001e; display:block; font-size:30px; font-weight:bold;}
+.section2 .tabs ul li:last-child a{ opacity: 0.5;}
+/* 탭메뉴 콘텐츠 css */
+.section2 .tab_content{ position:relative; height:600x;}
+.section2 .tab_content > div{position: absolute; top:0; left:0; padding:10px 0; padding-top: 80px; display:none; box-sizing: border-box;}
+.section2 .tab_content > div.on{display:block !important;} 
+/* season 탭 */
+.section2 .tab_content .season ul{display:flex; justify-content:space-between;}
+.section2 .tab_content .season ul li{width:20%; cursor: pointer;}
+.section2 .tab_content .season ul li img{width:100%; border-radius: 10px;}
+.section2 .tab_content .season ul li h4{font-size:24px; line-height:40px; margin-top:20px; color:#ff001e; font-weight:600;}
+.section2 .tab_content .season ul li p{color:#ff001e; opacity:0.6;}
+/* season 탭의 모달 */
+.section2 .tab_content .season .popup{position:fixed; top:0; left:0; display: none; width:100%; height:100%;background-color:rgb(0,0,0,0.8); z-index:500;}
+.section2 .tab_content .season .popup.on{display:block;}
+.section2 .tab_content .season .popup .popup_box{position:absolute; width:60%; top:50%; left:50%; display: none; transform: translate(-50%, -50%); z-index:1000;}
+.section2 .tab_content .season .popup .popup_box img{width:100%;}
+.section2 .tab_content .season .popup .close{position:absolute; top:31%;right:calc(20% + 30px);width:50px; height:50px; background-color:white; z-index:1100; cursor:pointer;}
+.section2 .tab_content .season .popup .close div{position:absolute; top:50%; left:0; margin-top:-3px;background-color:#ff001e; width:50px; height: 6px;}
+.section2 .tab_content .season .popup .close div.close1{transform: rotate(45deg);}
+.section2 .tab_content .season .popup .close div.close2{transform: rotate(-45deg);}
+@media screen and (max-width : 1320px){
+.section2 .tab_content .season .popup{width:1320px;}
+.section2 .tab_content .season .popup .popup_box{width:792px; right:264px;}}
+/* news 탭 */
+.section2 .tab_content .news{width:100%;}
+.section2 .tab_content .news .news_top{display:flex; justify-content: space-between; border-top: 4px solid #ff001e; border-bottom: 2px solid #ff001e;}
+.section2 .tab_content .news .news_top li{line-height: 70px; font-size:28px; color: #ff001e;}
+.section2 .tab_content .news .heading {width: 55%;}
+.section2 .tab_content .news .thm{width: 15%;}
+.section2 .tab_content .news .date, .news .view, .news .num {width : 10%;}
+.section2 .tab_content .news .news_list li{display:flex; align-items: center; border-bottom:1px solid #ff001e;}
+.section2 .tab_content .news .news_list p a{font-size:22px; color:rgb(21,21,21);}
+.section2 .tab_content .news .news_list .thm{padding:15px 0; font-size:0;}
+.section2 .tab_content .news .news_list .heading{padding-left: 50px;text-align: left;}
+
+/* 푸터 css */
+footer{height:300px; border-top:7px solid #ff001e; display:flex; align-items:center;}
+footer .footer_wrap{display:flex; justify-content:space-between; align-items:center; color:#ff001e; padding:0 40px; line-height:23px;}
+footer .footer_wrap div address, footer .footer_wrap p{text-align : left;}
+footer .footer_wrap .footer_info span{font-size:20px; font-weight:700; line-height: 40px;}
+footer .footer_wrap .footer_menu a{color:#ff001e;}

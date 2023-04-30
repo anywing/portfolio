@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    position: fixed;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -60px;
+    opacity: .9;
+    left: 0;
+    z-index: -1;
+}
+
+.vid video {
+    width: 100%;
+    min-width: 100%;
+}
+
+h1 {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 50;
+}
+
+h1 img {
+    width: 280px;
+    height: auto;
+}
+
+header {
+    width: 700px;
+    height: 100%;
+    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e032);
+    transform: skewX(-40deg);
+    -webkit-transform: skewX(-40deg);
+    position: fixed;
+    left: -400px;
+}
+
+#gnb {
+    width: 220px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    text-align: center;
+}
+
+#gnb>li {
+    position: relative;
+}
+
+#gnb>li>a {
+    display: block;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #222;
+}
+
+#gnb em {
+    display: block;
+    transform: skewX(40deg) !important;
+}
+
+#gnb li ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    border: 5px solid #b9fb05;
+    transition: all .4s;
+}
+
+#gnb li:hover ul {
+    visibility: visible;
+    left: 220px;
+}
+
+#gnb>li.on>a {
+    background: #222;
+    color: white;
+}
+
+#gnb ul a {
+    display: block;
+    width: 150px;
+    background: #222;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#gnb ul a:hover {
+    background: #b9fb05;
+    color: #222;
+}
+
+#sns {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+#sns i {
+    font-size: 22px;
+    color: #97e032;
+}
+
+.txtBox {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    width: 300px;
+}
+
+.txtBox .txt {
+    font-size: 26px;
+    color: white;
+}
+
+.txtBox .txt strong {
+    margin-left: 84px;
+    color: #b9fb05;
+}
+
+.txtBox .tit {
+    font-size: 120px;
+    color: #b9fb05;
+    font-weight: bold;
+}
+
+.txtBox .tit em {
+    color: white;
+    font-size: 40px;
+}
+
+#side {
+    position: absolute;
+    right: -700px;
+    bottom: 0;
+    width: 700px;
+    height: 100%;
+    transform: skewX(-40deg);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all .5s;
+}
+
+#side:hover{
+    right:-400px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#side:hover .con{
+    left:50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+#side:hover .con p{
+    visibility: visible;
+}
+#side:hover .btn{
+    display: none;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0 0 50px 60px;
+    width: 700px;
+    position: absolute;
+    bottom:0;
+    left:150px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+}
+
+.con p{
+    visibility: hidden;
+}
+
+.con p em{
+    display: block;
+    transform: skewX(40deg);
+    line-height: 30px;
+    font-style: normal;
+    color:#b9fb05;
+}
+
+.con p a{
+    opacity: 0.4;
+    transition: all .4s;
+}
+
+.con p a:hover{
+    opacity: 1;
+}
+
+.btn {
+    position: absolute;
+    left: 250px;
+    bottom: 70px;
+    transform: skewX(40deg);
+}
+
+@keyframes left_ani {
+    100%{right:130px; opacity: 0; scale:(.8);}
+}
+
+.btn i {
+    position: absolute;
+    right:0;
+    bottom:0;
+    color: #b9fb05;
+    font-size: 40px;
+    animation:  left_ani linear 1.5s infinite;
+}
+
+.btn i:nth-child(2){
+    animation:  left_ani linear 1.5s infinite 0.5s;
+}
+
+.btn i:last-child{
+    animation:  left_ani linear 1.5s infinite 1s;
+}

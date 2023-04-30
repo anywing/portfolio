@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* #wrap{
+    width : 1100px;
+    margin : 0 auto;
+    text-align: center;
+} */
+
+body{
+    text-align: center;
+    font-family: 'GyeonggiBatang';
+}
+
+a{
+    color :black;
+}
+
+h3{
+    font-size : 28px;
+    line-height : 50px;
+}
+
+h5{
+    font-size : 22px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.cl::after{
+    content : "";
+    display : block;
+    clear : both;
+}
+
+.header_wrap{
+    width : 100%;
+    position : sticky;
+    top : 0;
+    background-color: white;
+    z-index : 9999;
+}
+
+header{
+    width : 70%;
+    height : 81px;
+    line-height: 81px;
+    margin : 0 auto;
+}
+
+header > nav{
+    float : left;
+    width : 80%;
+}
+
+header > nav > a, header > nav > ul, header > nav > ul > li{
+    float : left;
+}
+
+header > nav > a{
+    display : block;
+    float : left;
+    width : 62px;
+    height : 81px;
+    margin-right : /*calc((100% - 100px*6) - 62px);*/ 80px;
+}
+
+header > nav > ul > li > a{
+    display : block;
+    width : 150px;
+    font-weight: bold;
+}
+
+header > p{
+    float : right;
+}
+
+.section1 > .main{
+    width : 100%;
+    height : 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+    background: url(../img/main.jpg) no-repeat center;
+    background-size : cover;
+    background-attachment: fixed;
+    text-align: center;
+    color : white;
+}
+
+.main h1, .main p{
+    opacity : 0;
+    width : 500px;
+}
+
+.main h1{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    line-height: 70px;
+    font-size: 45px;
+}
+
+.main p{
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-top : 20px;
+    line-height : 30px;
+}
+
+.main p span{
+    font-size : 18px;
+    font-weight: 600;
+}
+
+section > hr{
+    width : 200px;
+    margin : 0 auto;
+}
+
+section > p {
+    color : gray;
+    line-height : 50px;
+}
+.section2, .section3, .section4{
+    padding : 100px 0;
+    opacity : 0;
+}
+
+.promise {
+    width : 70%;
+    margin : 0 auto;
+    display : flex;
+    justify-content: space-between;
+    flex-wrap : wrap;
+    margin-top : 50px;
+}
+
+.promise li{
+    width : 45%;
+}
+
+.promise li img{
+    width : 100%;
+}
+
+.promise li p{
+    font-size : 16px;
+    color : gray;
+    margin-bottom : 30px;
+    padding : 0 10%;
+}
+
+.promise .top_list{
+    margin-bottom : 50px;
+}
+
+p .button{
+    display : block;
+    margin : 0 auto;
+    width : 160px;
+    height : 40px;
+    line-height : 40px;
+    border : 1px solid black;
+    font-style: italic;
+}
+
+.banner{
+    width : 100%;
+    height : 400px;
+}
+
+.banner p{
+    margin : 0 auto;
+    position : relative;
+    top : 230px;
+    width : 70%;
+    color : white;
+    font-size : 40px;
+    font-weight : bold;
+    text-align: left;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+}
+
+.banner1{
+    background: url(../img/banner1.jpg) no-repeat center;
+    background-size : cover; 
+    background-attachment: fixed;
+}
+
+.section3 p:last-child{
+    margin-top : 50px;
+}
+
+.section3 p img{
+    width : 70%;
+    height : 450px;
+    object-fit: cover;
+    margin-bottom : 30px;
+}
+
+.banner2{
+    background: url(../img/banner2.jpg) no-repeat center;
+    background-size : cover; 
+}
+
+.banner2 p{
+    text-align: right;
+}
+
+.tea{
+    width : 70%;
+    display : flex;
+    margin : 0 auto;
+    margin-top : 50px;
+    justify-content: space-between;
+}
+
+.tea li{
+    width : 180px;
+}
+
+.tea li img{
+    width : 100%;
+}
+
+.tea li p{
+    color : gray;
+}
+
+footer{
+    background-color : silver;
+    padding : 50px 0;
+}
+
+footer > ul{
+    width : 70%;
+    margin : 0 auto;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size : 14px;
+    text-align : left;
+}
+
+
+footer > ul > li{
+    height : 180px;
+    line-height: 18px;
+}
+
+footer > ul > li:first-child{
+    height : 81px;
+}
+
+footer .sub_list{
+    height : 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer > ul span{
+    color : brown;
+    font-weight : 600;
+}

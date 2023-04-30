@@ -1,0 +1,176 @@
+section{
+    position : relative;
+    width : 100%;
+    background-color: rgb(245, 245, 245);
+    padding : 20px 0;
+    text-align: center;
+}
+
+/* 섹션 전체 스타일 */
+
+.section_wrap{
+    max-width : 1320px;
+    margin : 0 auto;
+}
+
+.section_wrap > div{
+    margin-bottom : 30px;
+}
+
+/* 섹션 내용부분 스타일 */
+
+.section1{
+    width : 100%;
+    height : 350px;
+    display : flex;
+    justify-content : space-around;
+}
+.main-banner-left{
+    width : 57%;
+    background-image : url(../img/main-banner-left.png);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+}
+
+.main-banner-right{
+    width: 40%;
+    background-image : url(../img/main-banner-right.png);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+}
+
+/*섹션 1 배너부분 스타일 */
+
+.banner{
+    width : 1320px;
+    height : 280px;
+    display : flex;
+    justify-content : space-between;
+}
+
+.banner > a{
+    width : 45%;
+    background-image : url(../img/main-banner2.png);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+}
+
+.banner-text{
+    width : 55%;
+    font-size : 18px;
+    background-color : white;
+    text-align : left;
+    box-sizing : border-box;
+    border : 1px solid rgb(221, 221, 221);
+}
+
+.banner-text > div{
+    padding : 0 30px;
+}
+
+/* 중간 광고배너 부분 스타일 */
+
+.banner-text-top{
+    height : 80%;
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
+}
+
+.banner-text-top > h1{
+    font-weight : normal;
+    font-size : 30px;
+}
+.banner-text-top > p > a{ 
+    color : gray;
+}
+
+/* 광고배너 우측상단 부분 스타일 */
+
+.banner-text-bottom{
+    height : 20%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    border-top : 1px solid rgb(221, 221, 221);
+}
+
+.banner-open{
+    color : rgb(26, 151, 235);
+}
+
+/* 광고배너 우측하단 부분 스타일 */
+
+.main-menu{
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap : wrap;
+    align-items : flex-start;
+}
+
+.main-navi{
+    border-radius : 5px;
+    border-bottom : 5px solid rgb(221, 221, 221);
+    overflow : hidden;
+}
+.main-navi li{
+    width : 250px;
+    height : 100px;
+    border : 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    border-bottom : none;
+    background-color: white;
+}
+
+/* 메뉴리스트 메인 레이아웃 */
+
+.main-navi .title{
+    color : white;
+    border : none;
+    font-size : 18px;
+    line-height: 100px;
+}
+.main-menu .intro .title{
+    background-color : #3d449c;
+}
+.main-menu .html .title{
+    background-color : #3469a4;
+}
+.main-menu .php .title{
+    background-color : #3082a8;
+}
+.main-menu .jquery .title{
+    background-color : #34a47d;
+}
+.main-menu .java .title{
+    background-color : #34a48b;
+}
+
+/* 메뉴리스트 타이틀 부분 스타일 */
+
+.main-navi li a{
+    display : block;
+    height :  100px;
+    padding : 20px;
+    font-size : 12px;
+    letter-spacing : -1.5px;
+    color : gray;
+    text-align : left;
+    background-image : url(../img/arrow_right.png);
+    background-size : 25px;
+    background-repeat : no-repeat;
+    background-position : 205px 35px;
+}
+
+.main-navi li a strong{
+    font-size : 21px;
+    color : rgb(31, 31, 31);
+}
+.main-navi li a:hover{
+    background-color : rgb(245, 245, 245);
+}
+
+/* 메뉴리스트 하단 서브메뉴 부분 스타일 */

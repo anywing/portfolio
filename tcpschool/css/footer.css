@@ -1,0 +1,92 @@
+.footer-wrap{
+    height : 300px;
+    margin : 0 auto;
+    text-align : center;
+    color : gray;
+}
+
+/* 푸터 전체 스타일 */
+
+.footer-menu{
+    border-top : 1px solid rgb(221, 221, 221);
+    border-bottom : 1px solid rgb(221, 221, 221);
+}
+
+.footer-menu > ul{
+    display : flex;
+    justify-content : center;
+    font-size : 14px;
+    margin : 20px 0;
+    color : silver;
+}
+
+.footer-menu > ul > li > a{
+    display : block;
+    padding : 0 30px;
+    color : gray;
+}
+
+/* 푸터 메뉴 스타일 */
+
+.footer-menu > ul > li > a:hover{
+    color : rgb(71, 71, 71);
+}
+
+/* 호버시 작동 */
+
+.footer-main{
+    max-width : 1320px;
+    display : flex;
+    padding : 30px;
+    margin : 0 auto;
+}
+
+/* 푸터 하단 스타일 */
+
+.footer-info{
+    width : 800px;
+    background-image : url(../img/logo_footer.png);
+    background-repeat : no-repeat;
+    background-size : 120px;
+    background-position : left center;
+}
+
+.visit-user{
+    display : flex;
+    font-size : 14px;
+    font-weight : bold;
+    justify-content : center;
+}
+
+.visit-user li {
+    height : 30px;
+    line-height : 30px;
+    padding : 0 15px;
+}
+
+.visit-user li > b{
+    display : inline-block;
+    margin-left : 10px;
+    padding : 0 10px;
+    font-size : 15px;
+    border-radius : 10px;
+    background-color :rgb(245, 245, 245);
+}
+.footer-info > p {
+    font-size : 12px;
+}
+
+/* 푸터 하단 인포부분 스타일 */
+
+.footer-main > a{
+    width : 130px;
+    height : 50px;
+    border-radius : 10px;
+    background-color : #f3e40d;
+    background-image: url(../img/kakao_opentalk.png);
+    background-size : 80%;
+    background-position : center;
+    background-repeat : no-repeat;
+}
+
+/* 카카오 오픈채팅 링크버튼 스타일 *?
