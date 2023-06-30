@@ -1,0 +1,120 @@
+header {           
+    position: sticky;
+    top: 0; 
+    width :100%;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom :  1px solid rgb(71, 71, 71);
+    z-index: 2000;
+}
+
+a{
+    color : rgb(71, 71, 71);
+}
+
+/*헤더 전체 스타일 */
+
+.top_gnb{
+    height : 40px;
+    border-bottom : 1px solid rgb(221, 221, 221);
+}
+.gnb{
+    max-width : 1320px;
+    height : 40px;
+    line-height : 40px;
+    font-size : 12px;
+    color : gray;
+    margin : 0 auto;
+    display: flex;
+    justify-content : flex-end;    
+}
+
+.gnb :nth-child(4) {
+    color : rgb(49, 0, 224);
+    font-weight : bold;
+}
+.search img{
+    height: 20px;
+    margin : 10px 15px 0px;
+}
+
+/* 로그인 바 */
+
+.menu_container{
+    max-width : 1320px;
+    margin: 0 auto;
+    height : 95px;
+    line-height : 95px;
+    letter-spacing : -1.5px;
+    display : flex; 
+    justify-content: space-between;
+}
+
+/* 네비게이션 바 */
+
+.menu_container .logo_box{
+    margin : auto 0;
+    margin-top : 5px;
+}
+
+li.tcpi > a{
+    color : red;
+}
+nav > ul{
+    display : flex;
+    position : relative;
+}
+.navi > li {
+    border-left : 1px solid rgb(221, 221, 221);
+}
+.navi > li > a{
+    font-size : 18px;
+    width : 150px;
+    font-weight : bold;
+    display : block;
+}
+
+.sub{
+    margin-left : -1px;
+    margin-top : 0.5px;
+    padding : 20px 0;
+    display : none;
+    position : absolute;
+    border-left : 1px solid rgb(221, 221, 221);
+    background-color : white;
+}
+
+.sub li{
+    width : 150px;
+    height : 30px;
+    line-height : 30px;
+}
+
+.sub > li > a{
+    display : block;
+    font-size : 14px;
+    font-weight : bold;
+    letter-spacing : 0px;
+    color : rgb(97, 97, 97);
+}
+.tcpi{
+    border-right : 1px solid rgb(221, 221, 221);
+}
+
+.sub:last-child{
+    border-bottom : 1px solid rgb(71, 71, 71);
+}
+
+/* 세부 스타일 */
+
+.menu_container a:hover{
+    color: rgb(49, 0, 224);
+}
+
+.tcpi > a:hover{
+    color : red;
+}
+.navi:hover .sub{
+    display: block;
+}
+/* 호버시 작동 */

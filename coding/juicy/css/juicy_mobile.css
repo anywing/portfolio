@@ -1,0 +1,137 @@
+@media screen and (max-width:1024px) {
+    /* 모바일 헤더 레이아웃 */
+    header .top_menu{display: none;}
+    header nav .gnb_wrap .gnb{display: none;}
+
+    header nav .gnb_wrap{padding:15px 20px; position: relative;}
+
+    header nav .gnb_wrap .logo{width:90px; }
+    header nav .gnb_wrap .logo img{width:100%; }
+    
+    header nav .gnb_wrap .menu_icon{width: 40px; height: 40px; display: flex; flex-direction: column; justify-content: space-around; position: relative;}
+    header nav .gnb_wrap .menu_icon span{display:block; position: absolute;  width: 100%; height: 15%; border-radius: 5px; background: #ff001e; transition: all .4s ease;}
+    header nav .gnb_wrap .menu_icon span:first-child{ top: 0;}
+    header nav .gnb_wrap .menu_icon span:first-child.on{transform:translateY(calc(20px - 50%))  rotate(45deg) ;}
+    header nav .gnb_wrap .menu_icon span:nth-child(2){top: 50%; transform: translateY(-50%);}
+    header nav .gnb_wrap .menu_icon span:nth-child(2).on{display: none;}
+    header nav .gnb_wrap .menu_icon span:last-child{bottom : 0;}
+    header nav .gnb_wrap .menu_icon span:last-child.on{bottom : 0;transform:translateY(calc(-20px + 50%))  rotate(-45deg) ;}
+
+    header nav .gnb_wrap .gnb_m{display: block; position: absolute; top: 100%; left:0; width: 100%; height: 0; transition: height 0.4s ease-in; overflow: hidden;}
+    header nav .gnb_wrap .gnb_m ul li{width: 100%; height: 50px; line-height: 50px; transition: height 0.4s ease-in;}
+    header nav .gnb_wrap .gnb_m > ul > li{background: #ff001e;  overflow: hidden;}
+    header nav .gnb_wrap .gnb_m > ul > li > a{color:white; display: block; width: 100%; height: 50px; border-top: 1px solid white;}
+    header nav .gnb_wrap .gnb_m ul li:first-child a{border:none;}
+    header nav .gnb_wrap .gnb_m ul li .snb{width: 100%; background: white; color:#ff001e;}
+    header nav .gnb_wrap .gnb_m ul li .snb a{display:block; width: 100%; color:#ff001e;}
+    header nav .gnb_wrap .gnb_m ul li .snb a:hover{text-decoration: underline;}
+
+    /* 섹션 미디어쿼리 */
+    main{height:calc(100vw * (1400 / 1920)); background-size: cover;}
+    main .main_text{padding-top:5vw;}
+    main .main_text p{line-height:20px;font-size:18px; font-weight:400;}
+    main .main_text p:first-child{margin-bottom:7px;}
+    main .main_text h2{font-size:70px; margin-top: 3vw;}
+
+    .section1{margin-top:90px;}
+    .section1 .menu{flex-wrap: wrap; justify-content:center; gap:5%; margin-bottom:60px;}
+    .section1 .menu li{width: 30%;}
+    .section1 .menu li:first-child{margin-bottom: 10%;}
+    .section1 .menu li:last-child{display: none;}
+
+    /* 배너 미디어쿼리 */
+    .banner{margin:90px 0;}
+    .banner img#pc_banner{display: none;}
+    .banner img#m_banner{display: block;}
+
+
+    /* 탭메뉴 미디어쿼리 */
+    .section2{padding-bottom: 90px;}
+
+    .section2 .tabs ul li{width:calc(100% / 3); height: 55px; line-height:40px;}
+    .section2 .tabs ul li a{font-size:20px;}
+
+
+    .section2 .tab_content > div{padding:60px 15px 0;}
+
+    /* 프랜차이즈 탭 */
+    .section2 .tab_content .franchise .fran_head{width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap:40px;}
+    .section2 .tab_content .franchise .fran_head p img{width: 100%;}
+    .section2 .tab_content .franchise .fran_head p{font-size:20px;}
+
+    .section2 .tab_content .franchise .fran_wrap {flex-direction: column-reverse; justify-content:  space-between; margin-top:40px; gap:40px;}
+
+    .section2 .tab_content .franchise .fran_wrap .fran_left{width: 100%;}
+    .section2 .tab_content .franchise .fran_wrap .fran_left p{font-size:20px; line-height: 26px; word-break: break-all;}
+    .section2 .tab_content .franchise .fran_wrap .fran_left > p:nth-child(2){margin-top: 30px; font-size:14px; text-align: center;}
+
+    .section2 .tab_content .franchise .fran_wrap .fran_right{width:100%;}
+
+    .section2 .tab_content .franchise .fran_wrap .fran_link{justify-content: center; gap:40px; margin-top: 40px;}
+    .section2 .tab_content .franchise .fran_wrap .fran_link .fran_btn a{width: 120px; border:3px solid #ff001e; font-size: 14px;}
+    .section2 .tab_content .franchise .fran_wrap .fran_link .fran_btn a i{right: 5px;}
+
+    /* 시즌메뉴 탭 */
+    .section2 .tab_content .season ul{flex-wrap: wrap;}
+    .section2 .tab_content .season ul li{width:42%; cursor: pointer;}
+    .section2 .tab_content .season ul li h4{font-size:20px; line-height:24px; margin:20px 0 10px;}
+    .section2 .tab_content .season ul li p{font-size: 14px;}
+
+    .section2 .tab_content .season ul li:first-child{margin-bottom:40px;}
+
+    .section2 .tab_content .season .popup .popup_box img.season_m{display: block;}
+    .section2 .tab_content .season .popup .popup_box img.season_pc{display: none;}
+
+    /* 뉴스 탭 */
+    .section2 .tab_content .news{padding:60px 15px 0;}
+    .section2 .tab_content .news .news_top{display: none;}
+    .news_top .date, .news .view, .news .num {display: none;}
+
+    .section2 .tab_content .news .heading {width: 100%;}
+    .section2 .tab_content .news .thm{width: 100%; overflow: hidden;}
+    
+    .section2 .tab_content .news .news_list li{display: grid; grid-template-rows: 1fr 1fr; grid-template-columns:1.2fr 3fr; column-gap: 20px; border-bottom:1px solid #ff001e; padding: 15px 0;}
+    .section2 .tab_content .news .news_list p a{font-size:18px; color:#222; font-weight: 500;}
+    .section2 .tab_content .news .news_list .thm{grid-row: 1 / 3; grid-column: 1 / 2; padding: 0;}
+    .section2 .tab_content .news .news_list .date{font-size:16px; color:#c03e49; width: 100%; text-align: left; grid-row: 2 / 3; grid-column: 2 / 3;}
+    .section2 .tab_content .news .news_list .heading{ padding-left: 0; grid-row: 1 / 2; grid-column: 2 / 3; white-space: normal; word-break: keep-all;}
+    .section2 .tab_content .news .news_list .heading a:hover{text-decoration: underline;}
+
+    /* 푸터 미디어 쿼리 */
+    footer{padding: 90px 0;}
+    footer .footer_wrap{display: flex; flex-direction: column; align-items: center; gap:30px;}
+    .footer_logo{display: none;}
+    footer .footer_wrap div address, footer .footer_wrap p{text-align : center;}
+    footer .footer_wrap .footer_info span{display:block; font-size:28px; font-weight:bold; margin-bottom:15px;}
+    footer .footer_wrap .footer_menu{display: flex; justify-content: center; gap:30px;}
+    footer .footer_wrap .footer_menu a{display: block; border: 1px solid #ff001e; padding:5px 10px;}
+    footer .footer_wrap .copy{width: 100%; flex-wrap: wrap; display: flex; justify-content: center;}
+    footer .footer_wrap .copy p{flex: 1 0 100%; text-align: center;}
+}
+
+@media screen and (max-width:741px){
+    main .main_text p{line-height:17px;font-size:16px;}
+    main .main_text h2{font-size:40px; line-height: 40px; margin-top: 1vw;}
+
+    .section2 .tabs ul li a{font-size:12px;}
+
+    .section2 .tab_content .franchise .fran_head p{font-size:16px; word-break: keep-all;}
+
+    .section2 .tab_content .franchise .fran_wrap .fran_left p{font-size:16px; line-height: 22px;}
+    .section2 .tab_content .franchise .fran_wrap .fran_left > p:nth-child(2){font-size:12px;}
+
+    .section2 .tab_content .franchise .fran_wrap .fran_link .fran_btn a{width: 100px;  font-size: 12px;}
+
+    .section2 .tab_content .season ul li h4{font-size:16px; line-height:20px; margin:20px 0 10px;}
+    .section2 .tab_content .season ul li p{font-size: 12px; word-break: keep-all;}
+
+    .section2 .tab_content .season .popup .popup_box{width:75%;}
+
+    .section2 .tab_content .news .news_list p a{font-size:14px;}
+    .section2 .tab_content .news .news_list .date{font-size:12px;}
+
+
+    footer .footer_wrap{font-size: 14px;}
+    footer .footer_wrap .footer_menu{gap:10px;}
+    footer .footer_wrap .footer_menu a{font-size:12px;padding:5px 10px; word-break: keep-all;}
+}
